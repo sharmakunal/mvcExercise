@@ -15,7 +15,7 @@
 			<param-name>contextConfigLocation</param-name>
 			<param-value>/WEB-INF/spring-mvc-config.xml</param-value>
 		</init-param>
-		 -->
+		-->
 	</servlet>
 
 	<servlet-mapping>
@@ -23,7 +23,7 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
-	<servlet>
+	<!--<servlet>
 		<servlet-name>Verify</servlet-name>
 		<servlet-class>com.kunal.web.controller.Verify</servlet-class>
 	</servlet>
@@ -33,7 +33,7 @@
 		<url-pattern>/Verify</url-pattern>
 	</servlet-mapping>
 
-    <!--<welcome-file-list>-->
-		<!--<welcome-file>/welcome.jsp</welcome-file>-->
-	<!--</welcome-file-list>-->
+    <welcome-file-list>
+		<welcome-file>/welcome.jsp</welcome-file>
+	</welcome-file-list>-->
 </web-app>

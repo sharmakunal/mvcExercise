@@ -14,8 +14,9 @@
 
 	<bean id="/index.html" class="com.kunal.web.controller.StudentController"></bean>
 
-	<bean
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/>
+
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
 			<value>/WEB-INF/views/jsp/</value>
 		</property>
