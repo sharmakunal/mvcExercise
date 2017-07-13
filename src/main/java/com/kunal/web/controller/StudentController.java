@@ -1,18 +1,23 @@
 package com.kunal.web.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.AbstractController;
 import org.springframework.web.servlet.mvc.multiaction.MultiActionController;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-/*@Controller
+
+/*
 public class StudentController extends AbstractController{
 
     //Ques 1.Implement AbstractController in StudentController. create a mapping index.html
     //for it and render index.jsp view from it which displays messages "Hello from index.gsp"
+
     @Override
     protected ModelAndView handleRequestInternal(HttpServletRequest request, HttpServletResponse response) throws Exception {
         String Mess = "Hello";
@@ -22,7 +27,8 @@ public class StudentController extends AbstractController{
     }
 }*/
 
-public class StudentController extends MultiActionController{
+
+/*public class StudentController extends MultiActionController{
 
     //Que 2.Now remove AbstractController and useMultiActionController for StudentController which contains
     // 2 actions one action renders a jsp view and another action uses HttpServletResponse
@@ -42,4 +48,34 @@ public class StudentController extends MultiActionController{
     }
 
 
+}*/
+
+
+/*
+//Que 3.Use annotation in StudentController to define a default action index which renders a jsp page.
+
+@Controller
+public class StudentController{
+
+    @RequestMapping(value = "/")
+    public String printWelcome(ModelMap model) {
+        model.addAttribute("message", "Spring 3 MVC Hello World");
+        return "index";
+
+    }
+}*/
+/*
+Ques 4.Create one more annotation based action hello inside the StudentController which
+        and use @ResponseBody annotation from it to display Hello world.
+*/
+
+
+@Controller
+public class StudentController {
+
+    @RequestMapping("/")
+    @ResponseBody
+    String action() {
+        return "Hello World";
+    }
 }
