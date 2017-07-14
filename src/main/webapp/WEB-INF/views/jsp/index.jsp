@@ -5,11 +5,11 @@
 </head>
 <body>
 
-<form action="/countryAndState">
-    <label>Country Name</label>
-    <input type="text" name="countryName">
-    <label>State Name</label>
-    <input type="text" name="stateName">
+<form action="redirect" method="post">
+    <label>First Name</label>
+    <input type="text" name="firstName">
+    <label>Last Name</label>
+    <input type="text" name="lastName">
     <input type="submit">
 </form>
 
