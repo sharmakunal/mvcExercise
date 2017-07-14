@@ -4,6 +4,12 @@
     <title>Title</title>
 </head>
 <body>
-${msg}
+
+<form action="redirect" method="post">
+    <input type="text" name="firstName">
+    <input type="password" name="lastName">
+    <input type="submit">
+</form>
+
 </body>
 </html>

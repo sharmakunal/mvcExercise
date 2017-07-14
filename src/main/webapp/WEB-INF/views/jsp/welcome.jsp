@@ -4,11 +4,9 @@
     <title>Title</title>
 </head>
 <body>
-
-<form action="/Verify" method="post">
-    <input type="text" name="username">
-    <input type="password" name="password">
-    <input type="submit">
-</form>
+   <div class="container">
+     <h1>WELCOME</h1>
+      Hello ${firstName} ${lastName}
+   </div>
 </body>
 </html>
