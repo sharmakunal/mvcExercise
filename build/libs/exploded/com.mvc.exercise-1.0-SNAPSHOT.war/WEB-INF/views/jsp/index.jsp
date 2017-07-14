@@ -5,9 +5,11 @@
 </head>
 <body>
 
-<form action="redirect" method="post">
-    <input type="text" name="firstName">
-    <input type="password" name="lastName">
+<form action="/countryAndState">
+    <label>Country Name</label>
+    <input type="text" name="countryName">
+    <label>State Name</label>
+    <input type="password" name="stateName">
     <input type="submit">
 </form>
 
