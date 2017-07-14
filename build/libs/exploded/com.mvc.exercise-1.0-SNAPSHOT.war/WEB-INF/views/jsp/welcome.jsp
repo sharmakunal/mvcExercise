@@ -5,8 +5,8 @@
 </head>
 <body>
    <div class="container">
-     <h1>WELCOME</h1>
-      Hello ${firstName} ${lastName}
+     <h1>${heading}</h1>
+      Hello ${studentCO.firstName} ${studentCO.lastName}
    </div>
 </body>
 </html>
