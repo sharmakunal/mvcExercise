@@ -10,10 +10,10 @@ public class StudentController{
 
         @ResponseBody
         @RequestMapping(value = "/redirect",method = RequestMethod.POST)
-      public   ModelAndView pathDemo(@RequestParam String firstName,@RequestParam String lastName) {
+      public   ModelAndView pathDemo(StudentCO studentCO) {
             ModelAndView modelAndView=new ModelAndView("welcome");
-            modelAndView.addObject("firstName",firstName);
-            modelAndView.addObject("lastName",lastName);
+            modelAndView.addObject("firstName",studentCO.getFirstName());
+            modelAndView.addObject("lastName",studentCO.getLastName());
             return modelAndView;
         }
 
